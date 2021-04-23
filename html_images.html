@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html imagens</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+        <style>
+            img {
+              width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>HTML Imagem</h2>
+        <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+        <h2>HTML Imagem</h2>
+        <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+        <h2>HTML Imagem</h2>
+        <img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+        <!--src - Especifica o caminho para a imagem
+            alt - Especifica um texto alternativo para a imagem-->
+        <h2>Alternative text</h2>
+
+        <p> O atributo alt deve refletir o conteúdo da imagem, para que os usuários que não podem ver a imagem entendam o que ela contém: </p>
+
+        <img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+        <!--Se um navegador não conseguir encontrar uma imagem, ele exibirá o valor do atributo:-->
+        <p> Se um navegador não conseguir encontrar a imagem, ele exibirá o texto alternativo: </p>
+
+        <img src="wrongname.gif" alt="Flowers in Chania">
+        <h2>Tamanho da imagem</h2>
+
+        <p> Aqui, usamos o atributo style para especificar a largura e a altura de uma imagem: </p>
+
+        <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">  
+        <h2> Tamanho da imagem </h2>
+
+        <p> Aqui especificamos a largura e a altura de uma imagem com os atributos de largura e altura: </p>
+
+        <img src = "img_girl.jpg" alt = "Garota em uma jaqueta" width = "500" height = "600">
+
+        <h2> Atributos ou estilo de largura / altura? </h2>
+
+        <p> A primeira imagem usa o atributo de largura (definido para 128 pixels), mas o estilo na seção do cabeçalho o substitui e define a largura para 100%. </p>
+
+        <img src = "html5.gif" alt = "Ícone HTML5" width = "128" height = "128">
+
+        <p> A segunda imagem usa o atributo de estilo para definir a largura em 128 pixels, isso não será substituído pelo estilo na seção do cabeçalho: </p>
+
+        <img src = "html5.gif" alt = "Ícone HTML5" style = "width: 128px; height: 128px;">
+        <!--html5icon.gif-->
+        
+        <h2> Imagens em outra pasta </h2>
+        <p> É comum armazenar imagens em uma subpasta. Você deve então incluir o nome da pasta no atributo src: </p>
+        <img src="/images/html5i.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
+        <!--imagem qualquer de outro site-->
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+        <h2> Imagens animadas </h2>
+
+        <p> HTML permite imagens em movimento: </p>
+        <img src="programming.gif" alt="Computer man" style="width:48px;height:48px;">
+        <h2> Imagem como link </h2>
+
+        <p> A imagem é um link. Você pode clicar nele. </p>
+        <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        <h2> Imagens flutuantes </h2>
+        <p> <strong> Flutue a imagem para a direita: </strong> </p>
+        <p>
+        <img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante.
+        
+        <p> <strong> Flutue a imagem para a esquerda: </strong> </p>
+        <p>
+        <img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+        
+        Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante. Um parágrafo com uma imagem flutuante.  
+        </p>
+        </p>
+    </a>
+    </body>
+</html>
