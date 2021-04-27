@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+        }
+        .bae {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class = "city">
+            <h2> Londres </h2>
+            <p> Londres é a capital da Inglaterra. </p>
+            </div>
+            <div class = "city">
+            <h2> Paris </h2>
+            <p> Paris é a capital da França. </p>
+            </div>
+            <div class = "city">
+            <h2> Tóquio </h2>
+            <p> Tóquio é a capital do Japão. </p>
+        </div>
+        <h2> O atributo de classe </h2>
+        <p> Use CSS para estilizar elementos com o nome de classe "cidade": </p>
+
+        <h2 class = "bae"> Londres </h2>
+        <p> Londres é a capital da Inglaterra. </p>
+
+        <h2 class = "bae"> Paris </h2>
+        <p> Paris é a capital da França. </p>
+
+        <h2 class = "bae"> Tóquio </h2>
+        <p> Tóquio é a capital do Japão. </p>
+        <h2>Use of The class Attribute in JavaScript</h2>
+        <h2> Uso do atributo de classe em JavaScript </h2>
+        <p> Clique no botão para ocultar todos os elementos com o nome da classe "cidade": </p>
+        
+        <button onclick = "myFunction ()"> Ocultar elementos </button>
+        
+        <h2 class = "city"> Londres </h2>
+        <p> Londres é a capital da Inglaterra. </p>
+        
+        <h2 class = "city"> Paris </h2>
+        <p> Paris é a capital da França. </p>
+        
+        <h2 class = "city"> Tóquio </h2>
+        <p> Tóquio é a capital do Japão. </p>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementsByClassName("city");
+              for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+            }
+        </script>
+    </body>
+</html>
