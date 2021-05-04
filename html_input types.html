@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tipos de entrada</title>
+        <style>p {
+            border: 3px solid rgb(0, 0, 0);
+            padding: 30px;
+            margin: 50px;
+          }</style>
+    </head>
+    <body>
+        <p> input type="text" define um campo de entrada de texto de linha única:</p>
+        <p> Observe também que a largura padrão de um campo de texto é de 20 caracteres. </p>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+
+        <h2>Campo de senha</h2>
+        <p> O <strong> input type="password" </strong> define um campo de senha: </p>
+        <form action = "/ action_page.php">
+            <label for = "username"> Nome de usuário: </label> <br>
+            <input type = "text" id = "username" name = "username"> <br>
+            <label for = "pwd"> Senha: </label> <br>
+            <input type = "password" id = "pwd" name = "pwd"> <br> <br>
+            <input type = "submit" value = "Submit">
+            <input type="reset">
+        </form>
+        <p>Os caracteres em um campo de senha são mascarados (mostrados como asteriscos ou círculos).</p>
+        <p> Se você alterar os valores de entrada e clicar no botão "Redefinir",
+            os dados do formulário serão redefinidos para os valores padrão. </p>
+        <h2> Botões de rádio </h2>
+
+        <p> O <strong> input type = "radio" </strong> define um botão de opção: </p>
+      
+         <form action="/action_page.php">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">1</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">2</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">3</label><br><br>
+            <input type="submit" value="Submit">         
+        </form>
+
+        <h2> Caixas de seleção </h2>
+        <p> O <strong> input type = "checkbox" </strong> define uma caixa de seleção: </p>
+        <form action="/action_page.php">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Eu tenho um relógio</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Eu tenho um carro</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Eu tenho um barco</label><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+
+        <h2> Botão de entrada </h2>
+        <input type="button" onclick="alert('OIIIII!')" value="Clique aqui!">
+
+        <h2> Mostrar um seletor de cores </h2>
+        <p> O <strong> input type = "color" </strong> é usado para campos de entrada que devem conter uma cor. </p>
+        <form action="/action_page.php">
+            <label for="favcolor">Selecione sua cor favorita:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <input type="submit" value="Submit">
+        </form>
+        <p> <b> Observação: </b> type = "color" não é compatível com Internet Explorer 11 ou Safari 9.1 (ou anterior). </p>
+        <h2> Campo de data </h2>
+
+        <p> O <strong> input type = "date" </strong> é usado para campos de entrada que devem conter uma data. </p>
+        <form action="/action_page.php">
+          <label for="birthday">Aniversário:</label>
+          <input type="date" id="birthday" name="birthday">
+          <input type="submit" value="Submit">
+        </form>
+        
+        <h2> Campo de e-mail </h2>
+        <p> O <strong> input type = "email" </strong> é usado para campos de entrada que devem conter um endereço de e-mail: </p>
+        <form action="/action_page.php">
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+
+        <h1> Upload de arquivo </h1>
+        <p> Mostrar um campo de seleção de arquivo que permite que um arquivo seja escolhido para upload: </p>
+        <form action="/action_page.php">
+            <label for="myfile">Selecione um arquivo:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2> Campo Numérico </h2>
+        <p> O <strong> input type = "number" </strong> define um campo de entrada numérico. </p>
+        <p> Você pode usar os atributos mínimo e máximo para adicionar restrições numéricas ao campo de entrada: </p>
+        <form action="/action_page.php">
+            <label for="quantity">Quantidade (entre 1 e 5)</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
