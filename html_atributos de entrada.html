@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> atributos de entrada</title>
+    </head>
+    <body>
+        <h1> O atributo de entrada desativada </h1>
+        <p> O atributo disabled especifica que um campo de entrada deve ser desativado (inutilizável e não clicável): </p>
+        <form action="/action_page.php">
+            <label for="fname">Primeiro nome:</label><br>
+            <input type="text" id="fname" name="fname" value="John" disabled><br>
+            <label for="lname">Sobrenome:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h1> O atributo de tamanho de entrada </h1>
+        <p> O atributo size especifica a largura (em caracteres) de um campo de entrada: </p>
+        <form action="/action_page.php">
+            <label for="fname">Primeiro nome:</label><br>
+            <input type="text" id="fname" name="fname" size="50"><br>
+            <label for="pin">PIN:</label><br>
+            <input type="text" id="pin" name="pin" size="4"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h1> O atributo de comprimento máximo de entrada </h1>
+        <p> O atributo maxlength especifica o número máximo de caracteres permitidos em um campo de entrada: </p>
+        <form action="/action_page.php">
+        <label for="fname">Primeiro nome:</label><br>
+            <input type="text" id="fname" name="fname" size="50"><br>
+            <label for="pin">PIN:</label><br>
+            <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h1> Os atributos mínimo e máximo de entrada </h1>
+        <p> Os atributos mínimo e máximo especificam os valores mínimo e máximo para um elemento de entrada. </p>
+        <form action="/action_page.php">
+            <label for="datemax">Digite uma data antes de 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+            <label for="datemin">Digite uma data após 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+            
+            <label for="quantity">Quantidade (entre 1 e 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h1> Os múltiplos atributos de entrada </h1>
+        <p> O atributo multiple especifica que o usuário tem permissão para inserir mais de um valor em um campo de entrada. </p>
+        <form action="/action_page.php">
+            <label for="files">Selecione arquivos:<label>
+            <input type="file" id="files" name="files" multiple><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p> Para selecionar vários arquivos, mantenha pressionada a tecla CTRL ou SHIFT enquanto seleciona. </p>
+
+        <h1> O atributo de espaço reservado de entrada </h1>
+        <p> O atributo placeholder especifica uma pequena dica que descreve o valor esperado de um campo de entrada. </p>
+        <form action="/action_page.php">
+            <label for="phone">Digite um número de telefone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h1>O atributo passo de entrada</h1>
+        <p>O atributo step especifica os intervalos de número legais para um elemento de entrada.</p>
+        <form action="/action_page.php">
+            <label for="points">Pontos:</label>
+            <input type="number" id="points" name="points" step="3">
+            <input type="submit" value="Submit">
+        </form>
+
+        <h1> Os atributos de altura e largura de entrada </h1>
+        <p> Os atributos de altura e largura especificam a altura e a largura de um elemento input type = "image". </p>
+        <form action="/action_page.php">
+            <label for="fname">Primeiro nome:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+        </form>
+        <p> <b> Observação: </b> o tipo de entrada = "imagem" envia as coordenadas X e Y do clique que ativou o botão da imagem. </p>
+
+        <h1> O atributo da lista de entrada </h1>
+
+        <p> O atributo list se refere a um elemento datalist que contém opções predefinidas para um elemento de entrada. </p>
+
+        <form action="/action_page.php">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- a tag datalist não é compatível com Safari 12.0 (ou anterior) -->
+
+        <h1> O atributo de preenchimento automático </h1>
+        <p> O atributo autocomplete especifica se um campo de entrada deve ter o preenchimento automático ativado ou não. </p>
+        <p> Preencha e envie o formulário e, em seguida, recarregue a página para ver como o preenchimento automático funciona. </p>
+        <p> Observe que o preenchimento automático está "ativado" para o formulário, mas "desativado" para o campo de e-mail! </p>
+        <form action="/action_page.php" autocomplete="on">
+        <label for="fname">Primeiro nome:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Sobrenome::</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
