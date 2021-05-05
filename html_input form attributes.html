@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> O atributo de novalidate do formulário </h1>
+        <p> O atributo novalidate especifica que os dados do formulário não devem ser validados ao serem enviados. </p>
+        <form action="/action_page.php" novalidate>
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p> <strong> Observação: </strong> o atributo novalidate da tag do formulário não é compatível com Safari 10 (ou anterior). </p>
+
+
+        <h1> O atributo de entrada do formnovalidate </h1>
+        <form action="/action_page.php">
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+        </form>
+        <p><strong>Note:</strong> The formnovalidate attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+
+
+        <h1> O atributo input formtarget </h1>
+        <p> O atributo formtarget especifica um nome ou uma palavra-chave que indica onde exibir a resposta recebida após o envio do formulário. </p>
+        <form action="/action_page.php">
+        <label for="fname">Primeiro nome:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+        </form>
+
+
+
+        <h1> O atributo do método de entrada do formulário </h1>
+        <p> O atributo formmethod define o método HTTP para enviar dados do formulário ao URL de ação. </p>
+        <form action="/action_page.php" method="get" target="_blank">
+            <label for="fname">Primeiro nome: </label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit using GET">
+            <input type="submit" formmethod="post" value="Submit using POST">
+        </form>
+
+
+        <h1> O atributo input formenctype </h1>
+        <p> O atributo formenctype especifica como os dados do formulário devem ser codificados quando enviados. </p>
+        <form action="/action_page_binary.asp" method="post">
+            <label for="fname">nome próprio:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+        </form>
+
+
+
+        <h1> O atributo de formação de entrada </h1>
+        <p> O atributo formaction especifica o URL de um arquivo que processará a entrada quando o formulário for enviado. </p>
+        <form action="/action_page.php">
+            <label for="fname">Primeiro nome:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+        </form>
+
+
+
+        <h1> O atributo do formulário de entrada </h1>
+        <p> O atributo form especifica o formulário ao qual um elemento de entrada pertence. </p>
+        <form action="/action_page.php" id="form1">
+            <label for="fname">nome próprio: </label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p> O campo "Sobrenome" abaixo está fora do elemento do formulário, mas ainda faz parte do formulário. </p>
+        <label for="lname">apelido:</label>
+        <input type="text" id="lname" name="lname" form="form1">
+
+    </body>
+</html>
